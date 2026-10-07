@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Akriti Rai - 1st Year B.Tech Computer Science student at JECRC University, Jaipur.">
+  <title>Akriti Rai | B.Tech Computer Science Portfolio</title>
+  
+  <!-- Google Fonts for Modern Typography (with seamless system font fallback in CSS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="header" id="navbar">
+    <div class="container header-container">
+      <a href="#home" class="logo" id="site-logo" aria-label="Akriti Rai Home">
+        <span class="logo-badge">AR</span>
+        <span class="logo-text" id="logo-name">Akriti Rai</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Theme Toggle & Mobile Menu Button -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-toggle" aria-label="Open mobile menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         SECTION 1: HOME / HERO
+         ========================================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-glow hero-bg-glow-1" aria-hidden="true"></div>
+      <div class="hero-bg-glow hero-bg-glow-2" aria-hidden="true"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" id="hero-badge">
+            <span class="pulse-dot"></span>
+            <span id="hero-status-text">1st Year B.Tech Computer Science Student</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="greeting" id="hero-greeting">Hello, I'm</span>
+            <span class="name-gradient" id="hero-name">Akriti Rai</span>
+          </h1>
+
+          <p class="hero-role" id="hero-role">B.Tech Computer Science Student · JECRC University, Jaipur</p>
+          
+          <p class="hero-description" id="hero-description">
+            A passionate first-year Computer Science student interested in technology, programming, artificial intelligence, and building a solid technical foundation.
+          </p>
+
+          <div class="hero-actions" id="hero-actions">
+            <!-- Populated dynamically via script.js -->
+            <a href="#projects" class="btn btn-primary" id="hero-cta-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline" id="hero-cta-secondary">Get In Touch</a>
+          </div>
+
+          <!-- Quick Metadata Strip -->
+          <div class="hero-meta-bar" id="hero-meta-bar">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-display">
+            <div class="code-window">
+              <div class="code-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="code-title">akriti.config.js</span>
+              </div>
+              <div class="code-body">
+                <pre><code><span class="code-keyword">const</span> <span class="code-variable">student</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Akriti Rai"</span>,
+  <span class="code-prop">degree</span>: <span class="code-string">"B.Tech Computer Science"</span>,
+  <span class="code-prop">year</span>: <span class="code-string">"1st Year"</span>,
+  <span class="code-prop">university</span>: <span class="code-string">"JECRC University, Jaipur"</span>,
+  <span class="code-prop">focus</span>: [
+    <span class="code-string">"Programming"</span>,
+    <span class="code-string">"Artificial Intelligence"</span>,
+    <span class="code-string">"Web Development"</span>
+  ],
+  <span class="code-prop">learning</span>: <span class="code-literal">true</span>
+};</code></pre>
+              </div>
+            </div>
+            
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">🎓</span>
+              <div>
+                <span class="badge-label">Degree</span>
+                <span class="badge-value">B.Tech CSE</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">📍</span>
+              <div>
+                <span class="badge-label">Location</span>
+                <span class="badge-value">Jaipur, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: ABOUT ME
+         ========================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Introduction</span>
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <p class="section-subtitle" id="about-subtitle">My background, focus, and motivation as a student</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative -->
+          <div class="about-card bio-card">
+            <div class="card-glow" aria-hidden="true"></div>
+            <h3 class="card-heading">
+              <span class="heading-icon">👋</span>
+              <span>Who I Am</span>
+            </h3>
+            <div class="bio-text" id="about-bio-container">
+              <!-- Bio paragraphs populated via script.js -->
+            </div>
+
+            <!-- Key Info Highlights Grid -->
+            <div class="highlights-grid" id="about-highlights-container">
+              <!-- Populated via script.js -->
+            </div>
+          </div>
+
+          <!-- Interests Card -->
+          <div class="about-card interests-card">
+            <div class="card-glow" aria-hidden="true"></div>
+            <h3 class="card-heading">
+              <span class="heading-icon">💡</span>
+              <span id="interests-title">Areas of Interest</span>
+            </h3>
+            <p class="card-subtext">Topics, technologies, and fields I am actively exploring and passionate about:</p>
+            <div class="interests-tags" id="interests-container">
+              <!-- Populated via script.js -->
+            </div>
+
+            <div class="learning-philosophy">
+              <div class="philosophy-icon">🚀</div>
+              <div class="philosophy-content">
+                <h4>Learning Mindset</h4>
+                <p>Focused on continuous improvement, building strong conceptual fundamentals, and learning through hands-on practice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: EDUCATION
+         ========================================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title" id="education-title">Education</h2>
+          <p class="section-subtitle" id="education-subtitle">My academic path and ongoing coursework</p>
+        </div>
+
+        <div class="education-container" id="education-container">
+          <!-- Populated via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: SKILLS
+         ========================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title" id="skills-title">Skills & Tools</h2>
+          <p class="section-subtitle" id="skills-subtitle">Foundational and beginner-level technologies I am working with</p>
+        </div>
+
+        <!-- Skills Notice for Authenticity -->
+        <div class="student-note-card">
+          <span class="note-icon">ℹ️</span>
+          <p>As a 1st-year Computer Science student, these represent foundational and beginner-level skills that I am actively practicing, learning, and developing through coursework and personal study.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Populated via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: PROJECTS
+         ========================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title" id="projects-title">Projects</h2>
+          <p class="section-subtitle" id="projects-subtitle">Hands-on projects created during my learning journey</p>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Populated via script.js -->
+        </div>
+
+        <!-- Future Projects Callout -->
+        <div class="future-projects-banner">
+          <div class="banner-icon">📂</div>
+          <div class="banner-content">
+            <h4>More Projects Coming Soon</h4>
+            <p>I am continuously working on new assignments, mini-projects, and coding experiments. Future projects will be added here as I build them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6: ACHIEVEMENTS / CERTIFICATIONS
+         ========================================== -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title" id="achievements-title">Achievements / Certifications</h2>
+          <p class="section-subtitle" id="achievements-subtitle">Milestones, recognitions, and upcoming credentials</p>
+        </div>
+
+        <div class="achievements-container" id="achievements-container">
+          <!-- Populated via script.js (either placeholder or items list) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 7: CONTACT
+         ========================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Communication</span>
+          <h2 class="section-title" id="contact-title">Contact</h2>
+          <p class="section-subtitle" id="contact-subtitle">Get in touch for academic connections, discussions, or inquiries</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Cards -->
+          <div class="contact-info-card">
+            <h3 class="card-heading">
+              <span class="heading-icon">📬</span>
+              <span>Contact Information</span>
+            </h3>
+            <p class="contact-message" id="contact-message-text">
+              <!-- Populated via script.js -->
+            </p>
+
+            <div class="contact-details-list" id="contact-details-container">
+              <!-- Populated via script.js -->
+            </div>
+
+            <div class="social-links-wrap">
+              <h4 class="social-links-title">Online Profiles</h4>
+              <div class="social-links" id="social-links-container">
+                <!-- Populated via script.js -->
+              </div>
+            </div>
+          </div>
+
+         </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-badge">AR</span>
+          <span class="footer-name" id="footer-name">Akriti Rai</span>
+        </div>
+        <p class="footer-role" id="footer-role">1st Year B.Tech Computer Science Student · JECRC University, Jaipur</p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright" id="footer-copyright">
+          © 2026 Akriti Rai. All rights reserved.
+        </p>
+        <p class="footer-note" id="footer-note">
+          Built with HTML, CSS & JavaScript · Designed for easy updates
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File (Contains editable data & dynamic rendering) -->
+  <script src="script.js"></script>
+</body>
+</html>
